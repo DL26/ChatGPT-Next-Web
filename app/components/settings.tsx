@@ -328,6 +328,7 @@ export function Settings() {
                 ? Locale.Settings.Update.FoundUpdate(remoteId ?? "ERROR")
                 : Locale.Settings.Update.IsLatest
             }
+            className={"hidden"}
           >
             {checkingUpdate ? (
               <div />
@@ -469,6 +470,7 @@ export function Settings() {
           <ListItem
             title={Locale.Settings.Token.Title}
             subTitle={Locale.Settings.Token.SubTitle}
+            className={"hidden"}
           >
             <PasswordInput
               value={accessStore.token}
